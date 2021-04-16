@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Inter;
+}
+:root{
+    --pozadinaCelaN: linear-gradient(#1f212e 25%,	#1e202a 25%);
+    --pozadinaCelaD: linear-gradient(#f5f7ff 25%,	#ffffff 25%);
+    --bojaK1D: hsl(230, 17%, 14%);
+    --bojaK1N: hsl(0, 0%, 100%);
+    --bojaSlovaDan: hsl(228, 12%, 44%);
+    --bojaSlovaMrak: hsl(228, 34%, 66%);
+}
+
+html{
+    height: 100%;           /*Ovo radim da bi pozadina sa linear gradientom zauzela ceo ekran. Bez ovoga bi zauzela deo, a deo bio prazan*/
+}
+body{
+    margin: 0;
+    background: var(--pozadinaCelaD);
+}
+body.mrak{
+    background: var(--pozadinaCelaN);
+}
+.naslov.mrak{
+    color: white;
+}
+.tema.mrak{
+    color: white;
+}
+.kontejner1{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: var(--bojaK1D);
+    align-items: center;
+}
+.kontejner1.mrak{
+    color: var(--bojaK1);
+}
+.kontejner1b{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+}
+.naslov{
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.tema{
+    margin-right: 10%;
+    font-size: x-small;
+    font-weight: 700;
+}
+.ukupniPratioci{
+    font-size: smaller;
+    color: var(--bojaSlovaDan);
+    font-weight: 600;
+}
+
+.kontejner2{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+}
+.kontejner2a{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    align-items: center;
+    background-color: hsl(227, 45%, 95%);
+    border-radius: 3%;
+    border-top: solid 5px;
+}
+.kontejner2a.mrak{
+    background-color: hsl(228, 28%, 20%);
+}
+.kontejner2a:hover{
+    background-color: hsl(227, 42%, 92%);
+}
+.kontejner2a.mrak:hover{
+    background-color:hsl(228, 32%, 25%);
+}
+.kontejner2a.a{
+    border-color:hsl(208, 92%, 53%);
+}
+.kontejner2a.b{
+    border-color:hsl(203, 89%, 53%);
+}
+.kontejner2a.v{
+    border-color: hsl(329, 70%, 58%)
+}
+.kontejner2a.g{
+    border-color:hsl(348, 97%, 39%);
+}
+.slikaIme{
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    font-size: small;
+    color: var(--bojaSlovaDan);
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+}
+.slikaIme.mrak{
+    color:hsl(228, 34%, 66%);
+}
+.slika{
+    width: 15px;
+    height: 15px;
+    padding-top: 1%;
+}
+.slika.A{
+    margin-right: 5%;
+}
+.pratioci{
+    color: hsl(230, 17%, 14%);
+    font-size: xx-large;
+    font-weight: 800;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+.pratioci.mrak{
+    color: hsl(0, 0%, 100%);
+}
+.subFoll{
+    padding-bottom: 10%;
+    color: var(--bojaSlovaDan);
+    font-size: small;
+}
+.subFoll.mrak{
+    color:hsl(228, 34%, 66%);
+}
+.pageViews{
+    font-size:x-small;
+    font-weight: 700;
+}
+.saStrelicom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10%;
+}
+.strelica{
+    height: 5px;
+    width: 7px;
+    margin-right: 3%;
+}
+.pratiocaDanas{
+    font-size: 10px;
+    color:var(--bojaSlovaDan);
+}
+.pratiocaDanas{
+    color: var(--bojaSlovaMrak);
+}
+.kontejner3{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: white;
+}
+.overview{
+    font-weight: 600;
+    font-size: large;
+    color: var(--bojaSlovaDan);
+}
+.overview.mrak{
+    color: white;
+}
+.kontejner4{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+}
+.kontejner4a{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    background-color: hsl(227, 45%, 95%);
+    border-radius: 3%;
+    margin-bottom: 2.5%;
+}
+.kontejner4a.mrak{
+    background-color: hsl(228, 28%, 20%);
+}
+.kontejner4a:hover{
+    background-color: hsl(227, 42%, 92%);
+}
+.kontejner4a.mrak:hover{
+    background-color: hsl(228, 32%, 25%);
+}
+.kontejnerA{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    color: var(--bojaSlovaDan);
+}
+.kontejnerA.mrak{
+    color: var(--bojaSlovaMrak);
+}
+.kontejnerB{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    color: var(--bojaK1D);
+    align-items: center;
+}
+.kontejnerB.mrak{
+    color: var(--bojaK1N);
+}
+.kontejner5{
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: space-between;
+}
+.saStrelicom2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.strelica2{
+    height: 5px;
+    width: 7px;
+    margin-right: 10%;
+}
+.brojPregledaDanas{
+    font-size: large;
+    font-weight: 800;
+}
+.procenat{
+    font-size: 10px;
+}
+.plus{
+    color: green;
+}
+.minus{
+    color: red;
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 19px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: grey;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider.mrak{
+    background: linear-gradient(#378fe6,	#3eda82);
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 2px;
+    top:1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider.mrak:before{
+    background-color: hsl(230, 17%, 14%);
+  }
+  input:checked + .slider {
+    background-color: grey;
+  }
+  input.mrak:checked + .slider {
+    background-color: hsl(230, 17%, 14%);
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px hsl(225, 100%, 98%);
+  }
+  input.mrak:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(9px);
+    -ms-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  @media (max-width:475px) {
+    .kontejner1{
+        width: 90%;
+        margin: auto;
+        margin-top: 10%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .kontejner1b{
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .kontejner2{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    .kontejner2a{
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    .slikaIme{
+        padding-top: 3%;
+        padding-bottom: 2%;
+    }
+    .pratioci{
+        padding-top: 0;
+        padding-bottom: 2%;
+    }
+    .subFoll{
+        padding-bottom: 3%;
+    }
+    .saStrelicom{
+        margin-bottom: 4%;
+    }
+    .kontejner3{
+        width: 90%;
+        margin: auto;
+        margin-top: 3%;
+        margin-bottom: 7%;
+    }
+    .kontejner4{
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+    }
+    .kontejner4a{
+        width: 100%;
+    }
+    .kontejner5{
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+    }
+    .kontejnerA{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 3%;
+        padding-bottom: 1.5%;
+    }
+    .kontejnerB{
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 1.5%;
+      padding-bottom: 3%;
+  }
+}
